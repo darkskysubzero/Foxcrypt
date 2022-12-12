@@ -1,0 +1,98 @@
+/*
+    Filename            : joinStyle
+    Author              : Aysham Hameed
+    Created             : Dec 9, 2018, 12:50:16 PM
+    Operating System    : Windows 10
+    Version             : NetBeans IDE 8.2
+    Description         : Stylizes the join form.
+*/
+
+
+body{
+    /*
+    These are the style settings for the whole body of the login page.
+    The font is set to sans-serif, and the margin and padding to 0.    
+    */
+    margin: 0;  
+    padding: 0;
+    font-family: sans-serif;
+      background: url(../CSS/BG.jpg);
+    background-size: auto;
+}
+
+.joinForm{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+.joinForm h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+.joinForm input[type="text"],
+.joinForm input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline : none;
+    color: white;
+    border-radius: 50px; 
+    transition: 0.25x;
+}
+
+select{  
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  background: none;
+  color: #ccc;
+  border-color:#3498db; 
+}
+
+select:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.joinForm input[type="text"]:focus,
+.joinForm input[type="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+
+.joinForm input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+.joinForm input[type="submit"]:hover{
+     background: #2ecc71;
+}

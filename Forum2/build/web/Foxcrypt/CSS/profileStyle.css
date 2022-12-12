@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
+
+body{
+    /*
+    These are the style settings for the whole body of the login page.
+    The font is set to sans-serif, and the margin and padding to 0.    
+    */
+    margin: 0;  
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background: url(../CSS/BG.jpg);
+    background-size: auto;
+}
+
+.profilebox{
+    width: 450px;
+    background: #111;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+.profilebox img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.profilebox h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.profilebox h5{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.profilebox p{
+    font-size: 13px;
+    text-align: left;
+}
+
+hr { 
+    background-color: purple;
+    height: 1px;
+    border: none;
+} 
+
+.emailChangeBOX{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+
+.emailChangeBOX input[type="text"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+}
+
+.emailChangeBOX input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+.emailChangeBOX input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.emailChangeBOX h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+.passwordChangeBOX{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+
+.passwordChangeBOX input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+}
+
+.passwordChangeBOX input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+.passwordChangeBOX input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+.passwordChangeBOX h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+
+.SQChangeBOX{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+
+.SQChangeBOX input[type="text"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+}
+
+.SQChangeBOX input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+.SQChangeBOX input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+.SQChangeBOX h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+ select{  
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  background: none;
+  color: #ccc;
+  border-color:#3498db; 
+}
+
+select:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+
+.deleteBOX{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+
+
+.deleteBOX input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+}
+
+
+.deleteBOX input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+.deleteBOX input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+.deleteBOX h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.passwordForgottenBOX{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+
+
+.passwordForgottenBOX input[type="text"],
+.passwordForgottenBOX input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+}
+
+
+.passwordForgottenBOX input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+passwordForgottenBOX input[type="submit"]:hover{
+    background: #2ecc71;
+}
+
+.passwordForgottenBOX h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}

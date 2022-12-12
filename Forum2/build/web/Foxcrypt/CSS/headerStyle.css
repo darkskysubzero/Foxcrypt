@@ -1,0 +1,123 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400');
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/*HEADER SECTION*/
+header{
+    background:#00050a;
+    
+}
+
+.logo{
+    float: left;
+    width: 10%;
+    padding: 10px 0px;
+}
+
+header:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+ 
+    position: relative;
+}
+
+nav a{
+    color: #f5faff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color:#ff5d5d;
+}
+nav a:before{
+    content: '';
+    display: block;
+    height: 5px;
+    widows: 100px;
+    background-color: #f5faff;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+
+
+
+/*MAIN HEADING*/
+#mainHeading{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    width: 500;
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+#postButton{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#postButton a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+    
+        
+    background: #2ecc71;
+    display: inline-block;
+   
+    text-align: center;
+    border: 1px solid black;
+    padding: 14px 40px;
+    
+    color: black;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+#postButton a:hover{
+    text-decoration: none;
+    color: #191919;
+    border: 2px solid darkgreen;
+}
+

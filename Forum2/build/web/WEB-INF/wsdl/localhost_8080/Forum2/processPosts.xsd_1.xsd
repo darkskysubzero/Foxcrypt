@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://serviceServer/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://serviceServer/">
+
+<xs:element name="addComment" type="tns:addComment"/>
+
+<xs:element name="addCommentResponse" type="tns:addCommentResponse"/>
+
+<xs:element name="addPost" type="tns:addPost"/>
+
+<xs:element name="addPostResponse" type="tns:addPostResponse"/>
+
+<xs:element name="addReply" type="tns:addReply"/>
+
+<xs:element name="addReplyResponse" type="tns:addReplyResponse"/>
+
+<xs:element name="addUser" type="tns:addUser"/>
+
+<xs:element name="addUserResponse" type="tns:addUserResponse"/>
+
+<xs:element name="changeEmail" type="tns:changeEmail"/>
+
+<xs:element name="changeEmailResponse" type="tns:changeEmailResponse"/>
+
+<xs:element name="changePassword" type="tns:changePassword"/>
+
+<xs:element name="changePasswordResponse" type="tns:changePasswordResponse"/>
+
+<xs:element name="countComments" type="tns:countComments"/>
+
+<xs:element name="countCommentsResponse" type="tns:countCommentsResponse"/>
+
+<xs:element name="countPosts" type="tns:countPosts"/>
+
+<xs:element name="countPostsResponse" type="tns:countPostsResponse"/>
+
+<xs:element name="countReplies" type="tns:countReplies"/>
+
+<xs:element name="countRepliesResponse" type="tns:countRepliesResponse"/>
+
+<xs:element name="deleteAccount" type="tns:deleteAccount"/>
+
+<xs:element name="deleteAccountResponse" type="tns:deleteAccountResponse"/>
+
+<xs:element name="doesUserExist" type="tns:doesUserExist"/>
+
+<xs:element name="doesUserExistResponse" type="tns:doesUserExistResponse"/>
+
+<xs:element name="findCommentIdentity" type="tns:findCommentIdentity"/>
+
+<xs:element name="findCommentIdentityResponse" type="tns:findCommentIdentityResponse"/>
+
+<xs:element name="findPostAuthor" type="tns:findPostAuthor"/>
+
+<xs:element name="findPostAuthorResponse" type="tns:findPostAuthorResponse"/>
+
+<xs:element name="getAuthors" type="tns:getAuthors"/>
+
+<xs:element name="getAuthorsResponse" type="tns:getAuthorsResponse"/>
+
+<xs:element name="getCommentAuthors" type="tns:getCommentAuthors"/>
+
+<xs:element name="getCommentAuthorsResponse" type="tns:getCommentAuthorsResponse"/>
+
+<xs:element name="getCommentCount" type="tns:getCommentCount"/>
+
+<xs:element name="getCommentCountResponse" type="tns:getCommentCountResponse"/>
+
+<xs:element name="getCommentDescription" type="tns:getCommentDescription"/>
+
+<xs:element name="getCommentDescriptionResponse" type="tns:getCommentDescriptionResponse"/>
+
+<xs:element name="getCommentIDs" type="tns:getCommentIDs"/>
+
+<xs:element name="getCommentIDsResponse" type="tns:getCommentIDsResponse"/>
+
+<xs:element name="getCommentTimes" type="tns:getCommentTimes"/>
+
+<xs:element name="getCommentTimesResponse" type="tns:getCommentTimesResponse"/>
+
+<xs:element name="getCommentsData" type="tns:getCommentsData"/>
+
+<xs:element name="getCommentsDataResponse" type="tns:getCommentsDataResponse"/>
+
+<xs:element name="getPostCount" type="tns:getPostCount"/>
+
+<xs:element name="getPostCountResponse" type="tns:getPostCountResponse"/>
+
+<xs:element name="getPostDateTime" type="tns:getPostDateTime"/>
+
+<xs:element name="getPostDateTimeResponse" type="tns:getPostDateTimeResponse"/>
+
+<xs:element name="getPostDesciption" type="tns:getPostDesciption"/>
+
+<xs:element name="getPostDesciptionResponse" type="tns:getPostDesciptionResponse"/>
+
+<xs:element name="getPostID" type="tns:getPostID"/>
+
+<xs:element name="getPostIDResponse" type="tns:getPostIDResponse"/>
+
+<xs:element name="getPostTitle" type="tns:getPostTitle"/>
+
+<xs:element name="getPostTitleResponse" type="tns:getPostTitleResponse"/>
+
+<xs:element name="getPostsData" type="tns:getPostsData"/>
+
+<xs:element name="getPostsDataResponse" type="tns:getPostsDataResponse"/>
+
+<xs:element name="getReplyAuthors" type="tns:getReplyAuthors"/>
+
+<xs:element name="getReplyAuthorsResponse" type="tns:getReplyAuthorsResponse"/>
+
+<xs:element name="getReplyCount" type="tns:getReplyCount"/>
+
+<xs:element name="getReplyCountResponse" type="tns:getReplyCountResponse"/>
+
+<xs:element name="getReplyData" type="tns:getReplyData"/>
+
+<xs:element name="getReplyDataResponse" type="tns:getReplyDataResponse"/>
+
+<xs:element name="getReplyDescriptions" type="tns:getReplyDescriptions"/>
+
+<xs:element name="getReplyDescriptionsResponse" type="tns:getReplyDescriptionsResponse"/>
+
+<xs:element name="getReplyTimes" type="tns:getReplyTimes"/>
+
+<xs:element name="getReplyTimesResponse" type="tns:getReplyTimesResponse"/>
+
+<xs:element name="getSubjects" type="tns:getSubjects"/>
+
+<xs:element name="getSubjectsResponse" type="tns:getSubjectsResponse"/>
+
+<xs:element name="getTopicID" type="tns:getTopicID"/>
+
+<xs:element name="getTopicIDResponse" type="tns:getTopicIDResponse"/>
+
+<xs:element name="getTotalCommentCount" type="tns:getTotalCommentCount"/>
+
+<xs:element name="getTotalCommentCountResponse" type="tns:getTotalCommentCountResponse"/>
+
+<xs:element name="getUserA" type="tns:getUserA"/>
+
+<xs:element name="getUserAResponse" type="tns:getUserAResponse"/>
+
+<xs:element name="getUserEmail" type="tns:getUserEmail"/>
+
+<xs:element name="getUserEmailResponse" type="tns:getUserEmailResponse"/>
+
+<xs:element name="getUserQ" type="tns:getUserQ"/>
+
+<xs:element name="getUserQResponse" type="tns:getUserQResponse"/>
+
+<xs:element name="makeConnection" type="tns:makeConnection"/>
+
+<xs:element name="makeConnectionResponse" type="tns:makeConnectionResponse"/>
+
+<xs:element name="resetPassword" type="tns:resetPassword"/>
+
+<xs:element name="resetPasswordResponse" type="tns:resetPasswordResponse"/>
+
+<xs:element name="updateSQA" type="tns:updateSQA"/>
+
+<xs:element name="updateSQAResponse" type="tns:updateSQAResponse"/>
+
+<xs:complexType name="makeConnection">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="makeConnectionResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTotalCommentCount">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTotalCommentCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resetPassword">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="question" type="xs:string" minOccurs="0"/>
+<xs:element name="answer" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resetPasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReplyCount">
+<xs:sequence>
+<xs:element name="commentIdentity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReplyCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findCommentIdentity">
+<xs:sequence>
+<xs:element name="commentID" type="xs:int"/>
+<xs:element name="commentAuthor" type="xs:string" minOccurs="0"/>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findCommentIdentityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubjects">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getSubjectsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUser">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="q" type="xs:string" minOccurs="0"/>
+<xs:element name="a" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countComments">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countCommentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostDateTime">
+<xs:sequence>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostDateTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostCount">
+<xs:sequence>
+<xs:element name="topicName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addComment">
+<xs:sequence>
+<xs:element name="commentAuthor" type="xs:string" minOccurs="0"/>
+<xs:element name="commentDesc" type="xs:string" minOccurs="0"/>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCommentResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteAccount">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doesUserExist">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doesUserExistResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostDesciption">
+<xs:sequence>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostDesciptionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addReply">
+<xs:sequence>
+<xs:element name="text" type="xs:string" minOccurs="0"/>
+<xs:element name="author" type="xs:string" minOccurs="0"/>
+<xs:element name="commentIdentity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addReplyResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getReplyAuthors">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getReplyAuthorsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostTitle">
+<xs:sequence>
+<xs:element name="topicName" type="xs:string" minOccurs="0"/>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostTitleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentAuthors">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCommentAuthorsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAuthors">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAuthorsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findPostAuthor">
+<xs:sequence>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findPostAuthorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentsData">
+<xs:sequence>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentsDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getReplyTimes">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getReplyTimesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPost">
+<xs:sequence>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+<xs:element name="text" type="xs:string" minOccurs="0"/>
+<xs:element name="author" type="xs:string" minOccurs="0"/>
+<xs:element name="topicID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addPostResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countReplies">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countRepliesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSQA">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="question" type="xs:string" minOccurs="0"/>
+<xs:element name="answer" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSQAResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="changePassword">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePasswordResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCommentTimes">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCommentTimesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserEmail">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserEmailResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReplyDescriptions">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getReplyDescriptionsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserA">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getUserAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostID">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPostIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changeEmail">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="newEmail" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changeEmailResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTopicID">
+<xs:sequence>
+<xs:element name="topicName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTopicIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostsData">
+<xs:sequence>
+<xs:element name="topicName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostsDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countPosts">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countPostsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentDescription">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCommentDescriptionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReplyData">
+<xs:sequence>
+<xs:element name="commentIdentity" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReplyDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getUserQ">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getUserQResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentCount">
+<xs:sequence>
+<xs:element name="postID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCommentIDs">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCommentIDsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

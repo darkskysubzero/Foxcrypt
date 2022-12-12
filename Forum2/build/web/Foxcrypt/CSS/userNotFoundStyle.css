@@ -1,0 +1,52 @@
+body{
+    /*
+    These are the style settings for the whole body of the login page.
+    The font is set to sans-serif, and the margin and padding to 0.    
+    */
+    margin: 0;  
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../CSS/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foximg{
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#goBack{
+     position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 40px;
+    outline : none;
+    color: orange;
+    font-weight: bold;
+    transition: 0.25x;
+    cursor: pointer;
+    background: none;
+}
+
+#goBack:hover{
+    background: orangered;
+    color: black;
+    border:  2px solid orangered;
+}
+
+a{
+    text-decoration: none;
+    color: orangered;;
+}
+

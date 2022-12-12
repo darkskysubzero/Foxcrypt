@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WebService/myservice?WSDL" uri="wsdl/localhost_8080/WebService/myservice.wsdl"/>
+    <system systemId="http://localhost:8080/WebService/myservice?xsd=1" uri="wsdl/localhost_8080/WebService/myservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Forum/myservice?WSDL" uri="wsdl/localhost_8080/Forum/myservice.wsdl"/>
+    <system systemId="http://localhost:8080/Forum/myservice?xsd=1" uri="wsdl/localhost_8080/Forum/myservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Forum/showTopics?WSDL" uri="wsdl/localhost_8080/Forum/showTopics.wsdl"/>
+    <system systemId="http://localhost:8080/Forum/showTopics?xsd=1" uri="wsdl/localhost_8080/Forum/showTopics.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Forum/processPosts?WSDL" uri="wsdl/localhost_8080/Forum/processPosts.wsdl"/>
+    <system systemId="http://localhost:8080/Forum/processPosts?xsd=1" uri="wsdl/localhost_8080/Forum/processPosts.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Forum2/processPosts?WSDL" uri="wsdl/localhost_8080/Forum2/processPosts.wsdl"/>
+    <system systemId="http://localhost:8080/Forum2/processPosts?xsd=1" uri="wsdl/localhost_8080/Forum2/processPosts.xsd_1.xsd"/>
+</catalog>

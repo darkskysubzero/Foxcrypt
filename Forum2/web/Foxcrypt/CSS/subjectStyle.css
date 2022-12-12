@@ -1,0 +1,165 @@
+
+
+
+.subjectHeading{ 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: #fff;
+    width: 700;
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.subjectDescription{
+    font-family: Arial;
+    font-weight: 400;
+    color: white;
+    width: 500;
+    
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.commentContainer{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color:white;
+    background-color: #fff;
+    width: 500;
+    height: 200;
+    
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table{
+    color: white;
+    border-spacing: 0 2px;
+    padding: 10px 5px;
+}
+
+ td{
+    border: 1px solid white;
+    padding: 5px;
+    width: 500;
+}
+
+#tarea {
+    width: 500;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    
+}
+
+textArea{
+    width: 500;
+    height: 100;
+}
+
+#commentbutton{
+    border: 0;
+    background: none;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline : none;
+    color: white;
+    border-radius:50px;  
+    transition: 0.25x;
+    cursor: pointer;
+}
+
+#commentbutton:hover{
+   background: #2ecc71;
+}
+
+a{
+    text-decoration: none;
+}
+
+#commentBox{
+    background-color: #1A1623;
+    color:white;
+    text-align: left;
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 8px;
+    width: 500;
+    border-radius:10px;  
+}
+
+
+#replyBox td{
+    background-color: #2ecc71;
+    color: black;
+    font-size: 12px;
+    width: 100%;
+    padding: 5px 5px;
+    border: 1px solid black;
+    overflow: auto;
+    border-radius: 2px;
+    border-collapse: collapse;
+    word-wrap: break-word;
+    border-radius:10px; 
+}
+
+#replyBox{
+    width: 100%;
+    padding: 1px 00px;
+    table-layout: fixed;
+    
+}
+
+#replyTextArea{
+  width: 470px;
+  height: 1.5em;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  resize: none;
+  line-height:1em;  
+  transition: all 0.5s ease;
+}
+
+#replyTextArea:focus{
+    height: 70px;
+}
+
+#replyButton{
+  background-color:#ff4875;
+  border: 1px solid #e93939;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:100%;
+  border-radius: 10px;  
+}
+
+#replyButton:hover{
+  background-color: #111;
+  color: white;
+  
+}
+
+#cdes{
+    font-family: arial;
+    font-size: 12;
+    color: white;
+    background: none;
+    border: 2px solid #F08;
+    font-weight: bold;
+
+}

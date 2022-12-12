@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://serviceServer/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://serviceServer/">
+
+<xs:element name="doesUserExist" type="tns:doesUserExist"/>
+
+<xs:element name="doesUserExistResponse" type="tns:doesUserExistResponse"/>
+
+<xs:element name="getAuthors" type="tns:getAuthors"/>
+
+<xs:element name="getAuthorsResponse" type="tns:getAuthorsResponse"/>
+
+<xs:element name="getData" type="tns:getData"/>
+
+<xs:element name="getDataResponse" type="tns:getDataResponse"/>
+
+<xs:element name="getPostCount" type="tns:getPostCount"/>
+
+<xs:element name="getPostCountResponse" type="tns:getPostCountResponse"/>
+
+<xs:element name="getSubjects" type="tns:getSubjects"/>
+
+<xs:element name="getSubjectsResponse" type="tns:getSubjectsResponse"/>
+
+<xs:element name="getTopicID" type="tns:getTopicID"/>
+
+<xs:element name="getTopicIDResponse" type="tns:getTopicIDResponse"/>
+
+<xs:element name="makeConnection" type="tns:makeConnection"/>
+
+<xs:element name="makeConnectionResponse" type="tns:makeConnectionResponse"/>
+
+<xs:complexType name="makeConnection">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="makeConnectionResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPostCount">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPostCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doesUserExist">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doesUserExistResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getData">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTopicID">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTopicIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubjects">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getSubjectsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAuthors">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAuthorsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
